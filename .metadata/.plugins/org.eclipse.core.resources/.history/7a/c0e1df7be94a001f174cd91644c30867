@@ -1,0 +1,30 @@
+package test240726.object1;
+
+import java.util.StringTokenizer;
+
+public class TokenController {
+
+	public TokenController() {
+		super();
+	}
+	
+	public String afterToken(String str) {
+		StringTokenizer tokenizer = new StringTokenizer(str," ");
+		
+		String newStr = "";
+		while(tokenizer.hasMoreTokens()){
+			newStr += tokenizer.nextToken();
+		}
+		
+		return null;
+	}
+	
+	public String firstCap(String input) {
+		return null;
+	}
+	
+	public int findChar(String input, char one) {
+		return 0;
+	}
+
+}

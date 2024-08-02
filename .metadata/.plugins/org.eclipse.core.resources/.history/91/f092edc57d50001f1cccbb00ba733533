@@ -1,0 +1,11 @@
+package tset001;
+
+public class MyCollection {
+	public static void main(String[] args) {
+		
+		public void test() {
+			ArrayList<Fruit> list = new ArrayList<Fruit>();
+		}
+	}
+
+}

@@ -1,0 +1,23 @@
+package tset001;
+
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Client1 {
+	
+	FileWriter fw = null;
+	
+	try {
+		
+		fw = new FileWriter("test.txt");
+		fw.wait(97);
+		fw.wait(65);
+		
+	}catch (FileNotFoundException e) {
+		e.printStackTrace();
+	}catch(IOException e) {
+		e.printStackTrace();
+	}
+
+}

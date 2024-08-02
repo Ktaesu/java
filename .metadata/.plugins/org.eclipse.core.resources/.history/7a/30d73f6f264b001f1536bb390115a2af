@@ -1,0 +1,10 @@
+package test240726.object2;
+
+public class AscTitle {
+	
+	public int compare(Object o1, Object o2) {
+		return 0;
+	}
+	
+
+}

@@ -1,0 +1,26 @@
+package kh.model.vo;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class FoodItemSaver {
+
+	public void fileSave(String fileName) {
+		
+		Food food = new Food("사과", 20);
+		
+		FileOutputStream fs;
+		try {
+			fs = new FileOutputStream(fileName);
+			 try {
+				ObjectOutputStream objectOut = new ObjectOutputStream(fs);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,60 @@
+package test240731.generics;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class FarmController {
+	
+	HashMap<Farm, Integer> hMap;
+	ArrayList<Farm> list;
+	
+	
+	public FarmController() {
+		super();
+		this.hMap = hMap = new HashMap<>();
+		this.list = list = new ArrayList<>();
+	}
+
+	public boolean addNewKind(Farm f, int amount) {
+		if(hMap.containsKey(f)) { // f라는 키로 데이터가 존재한다면 --> 추가불가
+			return false;
+			
+		}else {
+			hMap.put(f, amount);
+			return true;
+		}
+		
+	}
+	
+	public boolean removeKind(Farm f) { //f라는 키로 데이터가 존재한다면 -> 삭제가능
+		if(hMap.containsKey(f)) {
+			hMap.remove(f);
+			return true;
+		}
+		return false;
+	}
+
+	public boolean changeAmount(Farm f,  int amount) {
+		if() {
+			
+		}
+		return false;
+	}
+	
+	public HashMap<Farm, Integer> printFarm(){
+		return null;
+	}
+	
+	public boolean buyFarm(Farm f) {
+		return false;
+	}
+	
+	public boolean removeFarm(Farm f) {
+		return false;
+	}
+	
+	public ArrayList<Farm> printBuyFarm(){
+		return null;
+	}
+	
+}
